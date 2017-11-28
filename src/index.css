@@ -1,5 +1,36 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', monospace;
+  background-image: url(static/img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+	margin: 5em 0 0 0;
+}
+
+.title h1 {
+	padding: 0 0 0 1.25em;
+  margin: 0;
+  font-size: 48px;
+  text-shadow: -6px 5px 0px #2854bd;
+}
+
+.title img {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
 }

@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
+import logo from '../src/static/img/pokemon_logo.png';
 
-class App extends Component {
+
+class Welcome extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Hola Mundo</h1>
+      <div className="title">
+      <img src={logo} alt="Pokémon Battle"/>
+        <h1>Battle!</h1>
       </div>
     );
   }
 }
 
-export default App;
+export default Welcome;
