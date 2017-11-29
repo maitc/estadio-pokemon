@@ -6,13 +6,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background-position: center;
+  background-position: top center;
 }
 
 #app {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.welcome {
+	overflow: hidden;
 }
 
 .title {
@@ -22,15 +26,26 @@ body {
 }
 
 .title h1 {
-	padding: 0 0 0 1.25em;
+	padding: 0 0 0 1em;
   margin: 0;
-  font-size: 48px;
+  font-size: 3em;
   text-shadow: -6px 5px 0px #2854bd;
 }
 
 .title img {
-  max-width: 600px;
+  max-width: 35em;
   width: 90%;
   margin: 0 auto;
   display: block;
+}
+
+.login {
+  max-width: 500px;
+  width: 90%;
+  margin: 5em auto;
+  text-align: center;
+}
+
+.login h3 {
+	margin: 1em;
 }
