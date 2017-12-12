@@ -1,0 +1,919 @@
+const pokemonList = [
+	{ 
+	"EASY":
+		[
+		 {
+		   "PKMN": "Bulbasaur",
+		   "LVL": 13,
+		   "HP": 40,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Charmander",
+		   "LVL": 10,
+		   "HP": 50,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Squirtle",
+		   "LVL": 8,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Caterpie",
+		   "LVL": 13,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Weedle",
+		   "LVL": 12,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Pidgey",
+		   "LVL": 8,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Rattata",
+		   "LVL": 9,
+		   "HP": 30,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Spearow",
+		   "LVL": 13,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Ekans",
+		   "LVL": 10,
+		   "HP": 40,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Pikachu",
+		   "LVL": 12,
+		   "HP": 40,
+		   "DMG": 40
+		 },
+		 {
+		   "PKMN": "Sandshrew",
+		   "LVL": 12,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Nidoran♀",
+		   "LVL": 13,
+		   "HP": 60,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Nidoran♂",
+		   "LVL": 20,
+		   "HP": 40,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Clefairy",
+		   "LVL": 14,
+		   "HP": 40,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Vulpix",
+		   "LVL": 11,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Jigglypuff",
+		   "LVL": 14,
+		   "HP": 60,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Zubat",
+		   "LVL": 10,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Oddish",
+		   "LVL": 9,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Paras",
+		   "LVL": 8,
+		   "HP": 40,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Venonat",
+		   "LVL": 12,
+		   "HP": 40,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Diglett",
+		   "LVL": 8,
+		   "HP": 30,
+		   "DMG": 40
+		 },
+		 {
+		   "PKMN": "Meowth",
+		   "LVL": 15,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Psyduck",
+		   "LVL": 15,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Mankey",
+		   "LVL": 7,
+		   "HP": 30,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Growlithe",
+		   "LVL": 18,
+		   "HP": 60,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Poliwag",
+		   "LVL": 13,
+		   "HP": 40,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Abra",
+		   "LVL": 10,
+		   "HP": 30,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Machop",
+		   "LVL": 20,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Bellsprout",
+		   "LVL": 11,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Tentacool",
+		   "LVL": 10,
+		   "HP": 30,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Geodude",
+		   "LVL": 16,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Ponyta",
+		   "LVL": 10,
+		   "HP": 40,
+		   "DMG": 50
+		 },
+		 {
+		   "PKMN": "Slowpoke",
+		   "LVL": 18,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Magnemite",
+		   "LVL": 13,
+		   "HP": 40,
+		   "DMG": 50
+		 },
+		 {
+		   "PKMN": "Farfetch'd",
+		   "LVL": 20,
+		   "HP": 50,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Doduo",
+		   "LVL": 10,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Seel",
+		   "LVL": 12,
+		   "HP": 60,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Grimer",
+		   "LVL": 17,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Shellder",
+		   "LVL": 8,
+		   "HP": 30,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Gastly",
+		   "LVL": 38,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Onix",
+		   "LVL": 12,
+		   "HP": 90,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Drowzee",
+		   "LVL": 12,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Krabby",
+		   "LVL": 20,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Voltorb",
+		   "LVL": 10,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Exeggcute",
+		   "LVL": 14,
+		   "HP": 50,
+		   "DMG": 20
+		 },
+		 {
+		   "PKMN": "Cubone",
+		   "LVL": 13,
+		   "HP": 40,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Koffing",
+		   "LVL": 13,
+		   "HP": 50,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Rhyhorn",
+		   "LVL": 18,
+		   "HP": 70,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Tangela",
+		   "LVL": 8,
+		   "HP": 50,
+		   "DMG": 40
+		 },
+		 {
+		   "PKMN": "Horsea",
+		   "LVL": 19,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Goldeen",
+		   "LVL": 12,
+		   "HP": 40,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Staryu",
+		   "LVL": 10,
+		   "HP": 60,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Magikarp",
+		   "LVL": 8,
+		   "HP": 30,
+		   "DMG": 0
+		 },
+		 {
+		   "PKMN": "Ditto",
+		   "LVL": 20,
+		   "HP": 50,
+		   "DMG": 0
+		 },
+		 {
+		   "PKMN": "Eevee",
+		   "LVL": 12,
+		   "HP": 50,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Porygon",
+		   "LVL": 16,
+		   "HP": 50,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Omanyte",
+		   "LVL": 19,
+		   "HP": 40,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Kabuto",
+		   "LVL": 9,
+		   "HP": 30,
+		   "DMG": 10
+		 },
+		 {
+		   "PKMN": "Snorlax",
+		   "LVL": 20,
+		   "HP": 90,
+		   "DMG": 30
+		 },
+		 {
+		   "PKMN": "Dratini",
+		   "LVL": 10,
+		   "HP": 40,
+		   "DMG": 10
+		 }
+		],
+	"NORMAL":
+			[
+			 {
+			   "PKMN": "Ivysaur",
+			   "LVL": 20,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Charmeleon",
+			   "LVL": 32,
+			   "HP": 80,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Wartortle",
+			   "LVL": 22,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Metapod",
+			   "LVL": 21,
+			   "HP": 70,
+			   "DMG": 20
+			 },
+			 {
+			   "PKMN": "Kakuna",
+			   "LVL": 14,
+			   "HP": 80,
+			   "DMG": 20
+			 },
+			 {
+			   "PKMN": "Pidgeotto",
+			   "LVL": 36,
+			   "HP": 60,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Raticate",
+			   "LVL": 41,
+			   "HP": 60,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Fearow",
+			   "LVL": 27,
+			   "HP": 70,
+			   "DMG": 60
+			 },
+			 {
+			   "PKMN": "Arbok",
+			   "LVL": 27,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Sandslash",
+			   "LVL": 33,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Nidorina",
+			   "LVL": 24,
+			   "HP": 90,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Nidorino",
+			   "LVL": 25,
+			   "HP": 60,
+			   "DMG": 80
+			 },
+			 {
+			   "PKMN": "Clefable",
+			   "LVL": 34,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Wigglytuff",
+			   "LVL": 36,
+			   "HP": 80,
+			   "DMG": 60
+			 },
+			 {
+			   "PKMN": "Golbat",
+			   "LVL": 29,
+			   "HP": 60,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Gloom",
+			   "LVL": 22,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Parasect",
+			   "LVL": 28,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Venomoth",
+			   "LVL": 28,
+			   "HP": 70,
+			   "DMG": 20
+			 },
+			 {
+			   "PKMN": "Persian",
+			   "LVL": 25,
+			   "HP": 70,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Golduck",
+			   "LVL": 27,
+			   "HP": 70,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Poliwhirl",
+			   "LVL": 28,
+			   "HP": 60,
+			   "DMG": 60
+			 },
+			 {
+			   "PKMN": "Kadabra",
+			   "LVL": 38,
+			   "HP": 60,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Machoke",
+			   "LVL": 40,
+			   "HP": 80,
+			   "DMG": 140
+			 },
+			 {
+			   "PKMN": "Weepingbell",
+			   "LVL": 28,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Tentacruel",
+			   "LVL": 30,
+			   "HP": 70,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Graveler",
+			   "LVL": 29,
+			   "HP": 60,
+			   "DMG": 120
+			 },
+			 {
+			   "PKMN": "Rapidash",
+			   "LVL": 33,
+			   "HP": 70,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Slowbro",
+			   "LVL": 26,
+			   "HP": 60,
+			   "DMG": 20
+			 },
+			 {
+			   "PKMN": "Magneton",
+			   "LVL": 28,
+			   "HP": 60,
+			   "DMG": 110
+			 },
+			 {
+			   "PKMN": "Dodrio",
+			   "LVL": 28,
+			   "HP": 70,
+			   "DMG": 60
+			 },
+			 {
+			   "PKMN": "Dewgong",
+			   "LVL": 42,
+			   "HP": 80,
+			   "DMG": 80
+			 },
+			 {
+			   "PKMN": "Muk",
+			   "LVL": 34,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Cloyster",
+			   "LVL": 25,
+			   "HP": 70,
+			   "DMG": 90
+			 },
+			 {
+			   "PKMN": "Haunter",
+			   "LVL": 17,
+			   "HP": 50,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Hypno",
+			   "LVL": 36,
+			   "HP": 90,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Kingler",
+			   "LVL": 27,
+			   "HP": 60,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Electrode",
+			   "LVL": 40,
+			   "HP": 80,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Exeggutor",
+			   "LVL": 35,
+			   "HP": 80,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Marowak",
+			   "LVL": 26,
+			   "HP": 60,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Hitmonlee",
+			   "LVL": 30,
+			   "HP": 60,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Lickitung",
+			   "LVL": 26,
+			   "HP": 90,
+			   "DMG": 20
+			 },
+			 {
+			   "PKMN": "Weezing",
+			   "LVL": 27,
+			   "HP": 60,
+			   "DMG": 80
+			 },
+			 {
+			   "PKMN": "Kangaskhan",
+			   "LVL": 28,
+			   "HP": 90,
+			   "DMG": 90
+			 },
+			 {
+			   "PKMN": "Seadra",
+			   "LVL": 23,
+			   "HP": 60,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Seaking",
+			   "LVL": 28,
+			   "HP": 70,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Starmie",
+			   "LVL": 28,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Mr. Mime",
+			   "LVL": 28,
+			   "HP": 40,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Scyther",
+			   "LVL": 25,
+			   "HP": 70,
+			   "DMG": 60
+			 },
+			 {
+			   "PKMN": "Jynx",
+			   "LVL": 23,
+			   "HP": 70,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Electabuzz",
+			   "LVL": 35,
+			   "HP": 70,
+			   "DMG": 50
+			 },
+			 {
+			   "PKMN": "Magmar",
+			   "LVL": 24,
+			   "HP": 50,
+			   "DMG": 80
+			 },
+			 {
+			   "PKMN": "Pinsir",
+			   "LVL": 24,
+			   "HP": 60,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Lapras",
+			   "LVL": 31,
+			   "HP": 80,
+			   "DMG": 40
+			 },
+			 {
+			   "PKMN": "Jolteon",
+			   "LVL": 29,
+			   "HP": 70,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Omastar",
+			   "LVL": 32,
+			   "HP": 70,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Kabutops",
+			   "LVL": 30,
+			   "HP": 60,
+			   "DMG": 70
+			 },
+			 {
+			   "PKMN": "Aerodactyl",
+			   "LVL": 28,
+			   "HP": 60,
+			   "DMG": 30
+			 },
+			 {
+			   "PKMN": "Dragonair",
+			   "LVL": 32,
+			   "HP": 80,
+			   "DMG": 80
+			 }
+			],
+	"HARD":
+		[
+		 {
+		   "PKMN": "Venusaur",
+		   "LVL": 67,
+		   "HP": 100,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Charizard",
+		   "LVL": 76,
+		   "HP": 120,
+		   "DMG": 100
+		 },
+		 {
+		   "PKMN": "Blastoise",
+		   "LVL": 52,
+		   "HP": 100,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Butterfree",
+		   "LVL": 42,
+		   "HP": 70,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Beedrill",
+		   "LVL": 32,
+		   "HP": 80,
+		   "DMG": 70
+		 },
+		 {
+		   "PKMN": "Pidgeot",
+		   "LVL": 40,
+		   "HP": 80,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Raichu",
+		   "LVL": 40,
+		   "HP": 80,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Nidoqueen",
+		   "LVL": 43,
+		   "HP": 90,
+		   "DMG": 70
+		 },
+		 {
+		   "PKMN": "Nidoking",
+		   "LVL": 48,
+		   "HP": 90,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Ninetales",
+		   "LVL": 32,
+		   "HP": 80,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Vileplume",
+		   "LVL": 35,
+		   "HP": 80,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Dugtrio",
+		   "LVL": 32,
+		   "HP": 70,
+		   "DMG": 110
+		 },
+		 {
+		   "PKMN": "Primeape",
+		   "LVL": 35,
+		   "HP": 70,
+		   "DMG": 90
+		 },
+		 {
+		   "PKMN": "Arcanine",
+		   "LVL": 45,
+		   "HP": 100,
+		   "DMG": 130
+		 },
+		 {
+		   "PKMN": "Poliwrath",
+		   "LVL": 48,
+		   "HP": 90,
+		   "DMG": 90
+		 },
+		 {
+		   "PKMN": "Alakazam",
+		   "LVL": 42,
+		   "HP": 80,
+		   "DMG": 50
+		 },
+		 {
+		   "PKMN": "Machamp",
+		   "LVL": 67,
+		   "HP": 100,
+		   "DMG": 160
+		 },
+		 {
+		   "PKMN": "Victreebel",
+		   "LVL": 42,
+		   "HP": 80,
+		   "DMG": 50
+		 },
+		 {
+		   "PKMN": "Golem",
+		   "LVL": 36,
+		   "HP": 80,
+		   "DMG": 160
+		 },
+		 {
+		   "PKMN": "Gengar",
+		   "LVL": 44,
+		   "HP": 110,
+		   "DMG": 60
+		 },
+		 {
+		   "PKMN": "Hitmonchan",
+		   "LVL": 40,
+		   "HP": 80,
+		   "DMG": 120
+		 },
+		 {
+		   "PKMN": "Chansey",
+		   "LVL": 55,
+		   "HP": 120,
+		   "DMG": 90
+		 },
+		 {
+		   "PKMN": "Rhydon",
+		   "LVL": 30,
+		   "HP": 160,
+		   "DMG": 100
+		 },
+		 {
+		   "PKMN": "Tauros",
+		   "LVL": 32,
+		   "HP": 80,
+		   "DMG": 100
+		 },
+		 {
+		   "PKMN": "Gyarados",
+		   "LVL": 41,
+		   "HP": 100,
+		   "DMG": 100
+		 },
+		 {
+		   "PKMN": "Vaporeon",
+		   "LVL": 42,
+		   "HP": 80,
+		   "DMG": 70
+		 },
+		 {
+		   "PKMN": "Flareon",
+		   "LVL": 42,
+		   "HP": 70,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Articuno",
+		   "LVL": 46,
+		   "HP": 100,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Zapdos",
+		   "LVL": 64,
+		   "HP": 90,
+		   "DMG": 160
+		 },
+		 {
+		   "PKMN": "Moltres",
+		   "LVL": 47,
+		   "HP": 100,
+		   "DMG": 100
+		 },
+		 {
+		   "PKMN": "Dragonite",
+		   "LVL": 45,
+		   "HP": 100,
+		   "DMG": 80
+		 },
+		 {
+		   "PKMN": "Mewtwo",
+		   "LVL": 51,
+		   "HP": 170,
+		   "DMG": 180
+		 },
+		 {
+		   "PKMN": "Mew",
+		   "LVL": 21,
+		   "HP": 90,
+		   "DMG": 90
+		 }
+		]
+	}
+]

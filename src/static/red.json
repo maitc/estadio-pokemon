@@ -1,0 +1,118 @@
+const redPokemonList = [
+	{
+   "EASY": [
+      {
+         "PKMN": "Red's Pikachu",
+         "LVL": 20,
+         "HP": 50,
+         "DMG": 30
+      },
+      {
+         "PKMN": "Red's Bulbasaur",
+         "LVL": 20,
+         "HP": 60,
+         "DMG": 40
+      },
+      {
+         "PKMN": "Red's Charmander",
+         "LVL": 20,
+         "HP": 70,
+         "DMG": 60
+      },
+      {
+         "PKMN": "Red's Squirtle",
+         "LVL": 20,
+         "HP": 60,
+         "DMG": 50
+      },
+      {
+         "PKMN": "Red's Snorlax",
+         "LVL": 20,
+         "HP": 90,
+         "DMG": 30
+      },
+      {
+         "PKMN": "Red's Lapras",
+         "LVL": 20,
+         "HP": 60,
+         "DMG": 40
+      }
+   ],
+   "NORMAL": [
+      {
+         "PKMN": "Red's Pikachu",
+         "LVL": 50,
+         "HP": 60,
+         "DMG": 80
+      },
+      {
+         "PKMN": "Red's Ivysaur",
+         "LVL": 50,
+         "HP": 120,
+         "DMG": 120
+      },
+      {
+         "PKMN": "Red's Charmeleon",
+         "LVL": 50,
+         "HP": 90,
+         "DMG": 140
+      },
+      {
+         "PKMN": "Red's Wartortle",
+         "LVL": 50,
+         "HP": 80,
+         "DMG": 90
+      },
+      {
+         "PKMN": "Red's Snorlax",
+         "LVL": 50,
+         "HP": 100,
+         "DMG": 80
+      },
+      {
+         "PKMN": "Red's Lapras",
+         "LVL": 50,
+         "HP": 90,
+         "DMG": 60
+      }
+   ],
+   "HARD": [
+      {
+         "PKMN": "Red's Pikachu",
+         "LVL": 70,
+         "HP": 70,
+         "DMG": 90
+      },
+      {
+         "PKMN": "Red's Venusaur",
+         "LVL": 70,
+         "HP": 230,
+         "DMG": 150
+      },
+      {
+         "PKMN": "Red's Charizard",
+         "LVL": 70,
+         "HP": 180,
+         "DMG": 190
+      },
+      {
+         "PKMN": "Red's Blastoise",
+         "LVL": 70,
+         "HP": 220,
+         "DMG": 150
+      },
+      {
+         "PKMN": "Red's Snorlax",
+         "LVL": 70,
+         "HP": 180,
+         "DMG": 160
+      },
+      {
+         "PKMN": "Red's Lapras",
+         "LVL": 70,
+         "HP": 140,
+         "DMG": 70
+      }
+   ]
+	}
+]
