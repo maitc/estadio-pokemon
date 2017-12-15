@@ -1,7 +1,7 @@
 # Pokémon Battle
 
 ## What is it?
-Pokémon Battle is our React Course final project for Laboratoria, created by Maibeet Torres and Caterina Da Silva
+Pokémon Battle is our React Course final project for Laboratoria, created by Maibeet Torres, Caterina Da Silva and Vanessa Pellegrini.
 
 The game consists in picking your pokemon team to fight the legendary trainer, Red.
 

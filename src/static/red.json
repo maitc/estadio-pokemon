@@ -1,0 +1,136 @@
+const redPokemonList = [
+   {
+      "EASY": [
+         {
+            "PKMN": "Red's Pikachu",
+            "LVL": 20,
+            "HP": 50,
+            "DMG": 30,
+            "ID": 25
+         },
+         {
+            "PKMN": "Red's Bulbasaur",
+            "LVL": 20,
+            "HP": 60,
+            "DMG": 40,
+            "ID": 1
+         },
+         {
+            "PKMN": "Red's Charmander",
+            "LVL": 20,
+            "HP": 70,
+            "DMG": 60,
+            "ID": 4
+         },
+         {
+            "PKMN": "Red's Squirtle",
+            "LVL": 20,
+            "HP": 60,
+            "DMG": 50,
+            "ID": 7
+         },
+         {
+            "PKMN": "Red's Snorlax",
+            "LVL": 20,
+            "HP": 90,
+            "DMG": 30,
+            "ID": 143
+         },
+         {
+            "PKMN": "Red's Lapras",
+            "LVL": 20,
+            "HP": 60,
+            "DMG": 40,
+            "ID": 131
+         }
+      ],
+      "NORMAL": [
+         {
+            "PKMN": "Red's Pikachu",
+            "LVL": 50,
+            "HP": 60,
+            "DMG": 80,
+            "ID": 25
+         },
+         {
+            "PKMN": "Red's Ivysaur",
+            "LVL": 50,
+            "HP": 120,
+            "DMG": 120,
+            "ID": 2
+         },
+         {
+            "PKMN": "Red's Charmeleon",
+            "LVL": 50,
+            "HP": 90,
+            "DMG": 140,
+            "ID": 5
+         },
+         {
+            "PKMN": "Red's Wartortle",
+            "LVL": 50,
+            "HP": 80,
+            "DMG": 90,
+            "ID": 8
+         },
+         {
+            "PKMN": "Red's Snorlax",
+            "LVL": 50,
+            "HP": 100,
+            "DMG": 80,
+            "ID": 143
+         },
+         {
+            "PKMN": "Red's Lapras",
+            "LVL": 50,
+            "HP": 90,
+            "DMG": 60,
+            "ID": 131
+         }
+      ],
+      "HARD": [
+         {
+            "PKMN": "Red's Pikachu",
+            "LVL": 70,
+            "HP": 70,
+            "DMG": 90,
+            "ID": 25
+         },
+         {
+            "PKMN": "Red's Venusaur",
+            "LVL": 70,
+            "HP": 230,
+            "DMG": 150,
+            "ID": 3
+         },
+         {
+            "PKMN": "Red's Charizard",
+            "LVL": 70,
+            "HP": 180,
+            "DMG": 190,
+            "ID": 6
+         },
+         {
+            "PKMN": "Red's Blastoise",
+            "LVL": 70,
+            "HP": 220,
+            "DMG": 150,
+            "ID": 9
+         },
+         {
+            "PKMN": "Red's Snorlax",
+            "LVL": 70,
+            "HP": 180,
+            "DMG": 160,
+            "ID": 143
+         },
+         {
+            "PKMN": "Red's Lapras",
+            "LVL": 70,
+            "HP": 140,
+            "DMG": 70,
+            "ID": 131
+         }
+      ]
+   }
+]
