@@ -13,9 +13,9 @@ class Welcome extends Component {
 	      <div className="login">
 	      	<h3>Hello trainer!</h3>
 	      	<div className="form-group">
-				    <label htmlFor="trainerName">What is your name?</label>
-				    <input type="text" className="form-control" id="trainerName"/>
-				  </div>
+				<label htmlFor="trainerName">What is your name?</label>
+				<input type="text" className="form-control" id="trainerName"/>
+			</div>
 	      	<button className="btn btn-lg btn-danger">Start!</button>
 	      </div>
       </div>
