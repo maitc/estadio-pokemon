@@ -16,10 +16,8 @@ class Welcome extends Component {
   	}
 
   	handleSubmit(event) {
-    	alert('A name was submitted: ' + this.state.value);
     	localStorage.setItem('user', this.state.value)
     	let users = localStorage.getItem('user')
-    	console.log(users)
     	event.preventDefault();
   	}	
 
