@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-loader": "^7.1.2",
+    "jquery": "^3.2.1",
     "react": "^16.1.1",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
@@ -15,7 +17,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "file-loader": "^1.1.5",
+    "file-loader": "^1.1.6",
     "url-loader": "^0.6.2"
   },
   "description": "## What is it? Pokémon Battle is our React Course final project for Laboratoria, created by Maibeet Torres and Caterina Da Silva",
