@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class Selection extends Component {
 	render() {
-		return{
+		return( 
 			<div className="difficulty">
 				<div className="difficulty-tittle">
-					<h2>Difficulty levels</h2>
+					<h2>Choose level of difficulty</h2>
 				</div>
 				<div className="btn-box">
 					<button className="btn-easy" id="easy">Easy</button>
@@ -13,7 +13,7 @@ class Selection extends Component {
 					<button className="btn-hard" id="hard">Hard</button>
 				</div>
 			</div>
-		}
+		)
 	}
 }
 export default Selection;
