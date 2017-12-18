@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jquery": "^3.2.1",
     "react": "^16.1.1",
+    "react-ajax": "^0.1.1",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
+    "react-fontawesome": "^1.6.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -17,5 +21,17 @@
   "devDependencies": {
     "file-loader": "^1.1.5",
     "url-loader": "^0.6.2"
-  }
+  },
+  "description": "## What is it? Pokémon Battle is our React Course final project for Laboratoria, created by Maibeet Torres and Caterina Da Silva",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maitc/estadio-pokemon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maitc/estadio-pokemon/issues"
+  },
+  "homepage": "https://github.com/maitc/estadio-pokemon#readme"
 }
