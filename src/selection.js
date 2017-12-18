@@ -132,8 +132,8 @@ class SkillListItem extends React.Component {
               <img src={skill.img} alt="" />
               <div className="skill-description">
                 <ul>
-                  <li>Skill level <span className="skill-value">{skill.level}</span></li>
-                  <li>Skill type <span className="skill-value">{skill.type}</span></li>
+                  <li>Level <span className="skill-value">{skill.level}</span></li>
+                  <li>Type <span className="skill-value">{skill.type}</span></li>
                 </ul>
                 <p className="skill-info">{skill.info}</p>
               </div>

@@ -81,15 +81,20 @@ a {
   float: left;
   width: 795px;
   font-size: 0;
+  position: relative;
+  top: 20vh;
 }
 .skill-chosen {
   float: right;
   width: 405px;
   padding: 15px;
-  background: #1B2631;
+  background: #3c5aa6;
+  position: relative;
+  top: -180vh;
+  border-radius: 20px;
 }
 .skill-panel {
-  background: #1B2631;
+  background:#3c5aa6;
 }
 .skill-panel h4 {
   color: #D5D8DC;
@@ -109,6 +114,7 @@ a {
 .skill-panel .skill-items li {
   margin-top: 8px;
   animation: fadeIn cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+  list-style: none;
 }
 .skill-panel .skill-items span {
   float: right;
@@ -136,10 +142,11 @@ a {
   cursor: pointer;
   font-size: 16px;
   transition: background .1s ease-in;
+  border-radius: 20px;
 }
 .skill-item.picked {
   border: 1px solid #D4AC0D;
-  background: #141313;
+  background: #3c5aa6;
 }
 .skill-item.picked::after {
   position: absolute;
@@ -150,11 +157,11 @@ a {
 
 }
 .skill-item:not(.picked):hover {
-  background: #0E141A;
+  background: ;
 }
 .skill-item h4 {
   margin-bottom: 10px;
-  color: #D4AC0D;
+  color: #ffcb05;
 }
 .skill-description {
   margin-top: 10px;
@@ -163,6 +170,7 @@ a {
 .skill-description li {
   font-size: 16px;
   color: #D5D8DC;
+  list-style:none;
 }
 .skill-description li .skill-value {
   float: right;
