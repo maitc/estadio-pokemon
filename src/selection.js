@@ -52,7 +52,7 @@ class Selection extends Component {
 
     loadSkillList() {
         $.ajax({
-            url: 'https://api.myjson.com/bins/2go1h',
+            url: 'https://api.myjson.com/bins/a1k0z',
             type: 'GET',
             dataType: 'json',
         })
