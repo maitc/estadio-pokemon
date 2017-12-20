@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 class Login extends Component {
 	constructor(props) {
@@ -16,7 +17,7 @@ class Login extends Component {
   	handleSubmit(event) {
     	localStorage.setItem('user', this.state.value)
     	let users = localStorage.getItem('user')
-    	event.preventDefault();
+    	//event.preventDefault();
   	}	
 
   	render() {
@@ -27,7 +28,7 @@ class Login extends Component {
 			        <div className="form-group">
 			          	<label htmlFor="trainerName">What is your name?</label>
 			          	<input type="text" className="form-control" id="trainerName" value={this.state.value} onChange={this.handleChange}/>
-			          	<button className="btn btn-lg btn-danger" onClick={this.handleSubmit}>Ok!</button>
+			          	<Link to="/difficulty" className="btn btn-lg btn-danger" onClick={this.handleSubmit}>Ok!</Link>
 			      	</div>
 			    </div>
 			</div>

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import $ from 'jquery'
+import React, { Component } from 'react'
+import { Link, withRouter } from 'react-router-dom'
+import Logo from './logo'
 
 class Selection extends Component {
 	    constructor(props) {
@@ -42,6 +43,7 @@ class Selection extends Component {
                 skillList.forEach((item) => {
                     if (item.id === itemId) {
                         chosenList.push(item);
+                        console.log(item)
                     }
                 });
             }
@@ -51,34 +53,39 @@ class Selection extends Component {
     }
 
     loadSkillList() {
-        $.ajax({
-            url: 'https://api.myjson.com/bins/a1k0z',
-            type: 'GET',
-            dataType: 'json',
-        })
-        .done(list => {
-            if (list) {
-                this.setState({skillList: list});
+        fetch('https://api.myjson.com/bins/q2477', { method: 'GET' })
+        .then(response => (response.json()))
+        .then(list => {
+            let arrPKMN = list[0][this.props.match.params.difficulty]
+            if (arrPKMN) {
+                this.setState({skillList: arrPKMN})
             }
         })
-        .fail(error => {
+        .catch(error => {
             console.log(error.status);
         });
     }
 
     render() {
         return (
-            <div className="skill-wrapper">
-                <div className="skill-picker">
-                    <SkillList
-                        list={this.state.skillList}
-                        addChosen={this.addToChosen}
-                      />
+            <div className="welcome">
+                <Logo />
+                <div className="login">
+                    <h3>Choose your Pókemon team</h3>
                 </div>
-                <div className="skill-chosen">
-                    <SkillChosen
-                        list={this.state.chosenList}
-                         />
+                <div className="skill-wrapper">
+                    <div className="skill-picker">
+                        <SkillList
+                            arrPKMN={this.state.skillList}
+                            addChosen={this.addToChosen}
+                          />
+                    </div>
+                    <div className="skill-chosen">
+                        <SkillChosen
+                            arrPKMN={this.state.chosenList}
+                             />
+                        <Link to="/battle" className="btn btn-lg btn-danger" onClick={this.handleSubmit}>Battle!</Link>
+                    </div>
                 </div>
             </div>
         )
@@ -90,7 +97,7 @@ class Selection extends Component {
 	    }
 
     render() {
-        let skillList = this.props.list.map((listItem, index) => {
+        let skillList = this.props.arrPKMN.map((listItem, index) => {
             return <SkillListItem 
                         key={index}
                         listInfo={listItem}
@@ -127,17 +134,17 @@ class SkillListItem extends React.Component {
         chosenClass += this.state.active ? " picked" : "";
 
         return (
-            <li onClick={this.onListItemClick.bind(this, skill.id)} className={chosenClass}>
-              <h4>{skill.name}</h4>
-              <img src={skill.img} alt="" />
-              <div className="skill-description">
-                <ul>
-                  <li>Skill level <span className="skill-value">{skill.level}</span></li>
-                  <li>Skill type <span className="skill-value">{skill.type}</span></li>
-                </ul>
-                <p className="skill-info">{skill.info}</p>
-              </div>
-            </li>
+                 <li onClick={this.onListItemClick.bind(this, skill.id)} className={chosenClass}>
+                  <h4>{skill.PKMN}</h4>
+                  <p>{skill.HP}</p>
+                  <div className="skill-description">
+                    <ul>
+                      <li>Skill level <span className="skill-value">{skill.LVL}</span></li>
+                      <li>Skill type <span className="skill-value">{skill.DMG}</span></li>
+                    </ul>
+                    <p className="skill-info">{skill.id}</p>
+                  </div>
+                </li>
         )
     }
 }
@@ -145,7 +152,7 @@ class SkillListItem extends React.Component {
 	class SkillChosen extends React.Component {
 	    render() {
 
-	        let chosenItems = this.props.list.map((item, index) => {
+	        let chosenItems = this.props.arrPKMN.map((item, index) => {
 	            return <SkillChosenItem key={index} item={item} />
 	        });
 	      
@@ -168,4 +175,8 @@ class SkillListItem extends React.Component {
 	        )
 	    }
 	}
-export default Selection;
+
+
+
+
+export default withRouter(Selection);

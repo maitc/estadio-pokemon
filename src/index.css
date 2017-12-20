@@ -79,12 +79,12 @@ a {
 }
 .skill-picker {
   float: left;
-  width: 795px;
+  width: 715px;
   font-size: 0;
 }
 .skill-chosen {
   float: right;
-  width: 405px;
+  width: 328px;
   padding: 15px;
   background: #1B2631;
 }
@@ -125,7 +125,7 @@ a {
   /* flexbox? Never heard about it. Is it tasty? */
   position: relative;
   display: inline-block;
-  width: 250px;
+  width: 210px;
   margin-right: 15px;
   margin-bottom: 15px;
   padding: 15px;
